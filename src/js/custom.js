@@ -25,9 +25,21 @@ $(document).ready(function () {
   $("input[type=radio][name=attend]").change((event) => {
     const value = event.target.value;
     if (value === "Yes") {
+      const elements = document.getElementsByClassName("will-attend");
+      elements.forEach((e) => {
+        e.style.display = "block";
+      });
       document.getElementById("attend-number").setAttribute("required", "");
+      document.getElementById("myself").setAttribute("required", "");
+      document.getElementById("need-support").setAttribute("required", "");
     } else {
+      const elements = document.getElementsByClassName("will-attend");
+      elements.forEach((e) => {
+        e.style.display = "none";
+      });
       document.getElementById("attend-number").removeAttribute("required");
+      document.getElementById("myself").removeAttribute("required");
+      document.getElementById("need-support").removeAttribute("required");
     }
   });
 });

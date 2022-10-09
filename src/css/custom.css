@@ -1,3 +1,17 @@
+body, * {
+  font-family: 'Dancing Script';
+}
+
+.button {
+  font-family: 'Dancing Script';
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: 'Dancing Script';
+  font-weight: 600;
+}
+
 .agenda-item {
   display: flex;
   justify-content: space-between;
@@ -15,6 +29,7 @@
 
 .custom-form {
   width: 100%;
+  font-size: 22px;
 }
 
 .radio-btn {
@@ -81,6 +96,7 @@
 
 .timeline-content {
   flex-basis: 40%;
+  font-size: 22px;
 }
 
 .dot {
@@ -101,6 +117,16 @@
 }
 
 @media only screen and (max-width: 479px) {
+  .heading-hero {
+    font-size: 50px;
+  }
+  .heading {
+    font-size: 46px;
+  }
+  .subtitle {
+    font-weight: 600;
+    font-size: 15px;
+  }
   .section:last-child {
     padding-bottom: 16px;
   }
@@ -116,4 +142,8 @@
     margin-bottom: 0;
     display: block;
   }
+}
+
+.will-attend {
+  display: none;
 }
