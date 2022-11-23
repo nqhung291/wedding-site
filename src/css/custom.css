@@ -99,6 +99,11 @@ body, * {
   font-size: 22px;
 }
 
+.timeline-content > div:nth-child(2) {
+  margin-top: 5px;
+  font-size: 28px;
+}
+
 .dot {
   position: absolute;
   width: 12px;
@@ -146,4 +151,8 @@ body, * {
 
 .will-attend {
   display: none;
+}
+
+.custom-paragraph {
+  font-size: 22px;
 }
