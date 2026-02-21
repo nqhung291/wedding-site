@@ -126,6 +126,12 @@ body, * {
 }
 
 @media only screen and (max-width: 479px) {
+  .hero-header4 {
+    display: none;
+  }
+  .grid-hero---a {
+    grid-template-columns: 1fr 1fr;
+  }
   .heading-hero {
     font-size: 50px;
   }
@@ -145,6 +151,13 @@ body, * {
   }
   .timeline-section .image-subtitle {
     margin: 0 auto 14px;
+  }
+  .timeline li {
+    gap: 20px;
+  }
+  .timeline-icon > img {
+    margin-right: 24px;
+    height: 44px;
   }
   .ending {
     transform: translateY(-50%);
